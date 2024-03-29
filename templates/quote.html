@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900;1,9..40,1000&display=swap"
+        rel="stylesheet">
+</head>
+
+<body style="margin: 0;padding: 0px;box-sizing: border-box;font-family: 'DM Sans', sans-serif;background-color: #fff;">
+    <div style="min-height: 100vh;display: flex;align-items: center;">
+        <section
+            style="width: 100%;max-width: 650px;padding: 0;box-sizing: border-box;margin: auto;background-color: #fff;border-radius: 8px;box-shadow: 0 0 20px 0 #00000042;display: flex;align-items: start;justify-content: center;">
+            <table style="width: 100%;">
+                <tr>
+                    <td style="text-align: center;border-bottom: 1px solid #62C3CA;padding: 20px;">
+                        <img src="https://oculiximages.s3.amazonaws.com/empireBiologo.png" alt>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding:20px 20px;box-sizing: border-box;text-align: left;">
+                        <h6
+                            style="margin: 10px auto 0px;width: 100%; max-width: 100%;text-align: left;font-weight: 400;font-size: 15px;color: #3a3a3a;">
+                            User {{ firstName }} {{ lastName }} has quote with the following details:
+                        </h6>
+                        <ul style="padding: 0;margin: 0;list-style-type: none;margin-top: 20px;">
+                            <li style="font-size: 15px;font-weight: 400;color: #3a3a3a;margin-bottom: 10px;">
+                                <span
+                                    style="font-weight: 600;min-width: 120px;display: inline-block;color: #1E1E1E;">Name:</span>{{ firstName1 }} {{ lastName1 }}
+                            </li>
+                            <li style="font-size: 15px;font-weight: 400;color: #3a3a3a;margin-bottom: 10px;">
+                                <span
+                                    style="font-weight: 600;min-width: 120px;display: inline-block;color: #1E1E1E;">Email
+                                    address:</span>
+                                {{ email }} 
+                            </li>
+                            <li style="font-size: 15px;font-weight: 400;color: #3a3a3a;margin-bottom: 10px;">
+                                <span
+                                    style="font-weight: 600;min-width: 120px;display: inline-block;color: #1E1E1E;">Phone:</span>
+                                {{ phoneNo }}
+                            </li>
+                            <li style="font-size: 15px;font-weight: 400;color: #3a3a3a;margin-bottom: 10px;">
+                                <span
+                                    style="font-weight: 600;min-width: 120px;display: inline-block;color: #1E1E1E;">Organization:</span>
+                                {{ organisation }}
+                            </li>
+                            <li style="font-size: 15px;font-weight: 400;color: #3a3a3a;margin-bottom: 10px;">
+                                <span
+                                    style="font-weight: 600;min-width: 120px;display: inline-block;color: #1E1E1E;">Message:</span>
+                                {{ message }}
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </section>
+    </div>
+</body>
+
+</html>
