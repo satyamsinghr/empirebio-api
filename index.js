@@ -14,7 +14,6 @@ app.use(bodyParser.json());
 
 const port = 8000;
 
-
 // Create a MySQL connection pool
 const pool = mysql.createPool({
   host: process.env.RDS_HOSTNAME,
@@ -25,7 +24,6 @@ const pool = mysql.createPool({
     connectTimeout: 60 * 60 * 1000,
     queueLimit: 30,
 });
-
 
 let contacts = [];
 let quotes = [];
